@@ -2,8 +2,8 @@
 
 ## Latest Checkpoint
 - **Date:** 2026-10-28
-- **Phase:** Phase 0 — Initialization
-- **Status:** Repository structure created, governance documents written, registries/templates initialized. Pending validation and initial Git commit.
+- **Phase:** Phase 0 — Mission alignment (WP-01C)
+- **Status:** Mission updated to AI-assisted patient-benefit focus (Discovery + Translation). Dual tracks, patient-benefit framework, AI/hypothesis boundaries added. Preserving T2D scope and WP-02 roadmap. Pending commit/push.
 
 ## Completed Work
 - [x] Created repository directory structure (`research/`, `research/diseases/type-2-diabetes/`, `templates/`)
@@ -18,14 +18,14 @@
 - [x] Initialized `research/claim-ledger.csv` with headers
 - [x] Created disease directory structure for T2D with all required files (placeholder content with governance notes)
 - [x] Created templates: `study-appraisal.md`, `candidate-intervention.md`
+- [x] Initialized Git on `main`, committed initial plan (6759329)
+- [x] Connected to GitHub remote (SSH) and pushed to `origin/main` (WP-01B)
+- [x] Aligned mission with AI-assisted patient-benefit focus: Discovery + Translation tracks, patient-benefit framework, AI/hypothesis boundaries, affordability/accessibility (including India), questions for qualified clinicians (WP-01C)
 
 ## Outstanding Work
-- [ ] Validate all files exist, CSV headers/format, Markdown structure, links
-- [ ] Verify no secrets/PHI present
-- [ ] Initialize Git (main branch), stage intended files, review diff
-- [ ] Create initial commit: `docs: initialize medicine research project plan`
-- [ ] Verify commit SHA/branch/status
-- [ ] Check GitHub CLI auth and repo existence; create private repo/push if possible, else record manual steps
+- [ ] Commit and push WP-01C changes with message `docs: clarify AI-assisted patient-benefit mission`
+- [ ] Verify commit SHA, upstream tracking, remote state, clean working tree
+- [ ] Proceed to WP-02 (Phase 1: Establish T2D remission evidence baseline) as separate commit
 
 ## Decisions
 - **Documentation-only:** No app implementation; strict medical safeguards enforced.

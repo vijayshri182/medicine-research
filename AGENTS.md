@@ -1,7 +1,9 @@
 # AGENTS.md — Medicine Research Repository
 
 ## Scope and Purpose
-This repository is for structured research documentation on diabetes and related metabolic conditions. It is **documentation only**. Do not implement an application, automated medical decision system, clinical tool, or unapproved external integrations.
+This repository uses AI-assisted scientific research to help people affected by diseases. Our mission is to identify credible evidence, evaluate potential treatments and disease-modifying interventions, and translate validated findings into safe, accessible, and understandable information.
+
+This repository is **documentation only**. Do not implement a diagnostic or treatment-prescribing system, automated medical decision system, clinical tool, or unapproved external integrations. All findings must be presented as research/educational information, not medical advice.
 
 ## Medical Research Safeguards (Mandatory)
 - **No clinical advice.** Do not recommend starting, stopping, changing, or adjusting prescribed medications/treatments. Any mention of treatment changes must be explicitly flagged as research context only.
@@ -21,13 +23,31 @@ This repository is for structured research documentation on diabetes and related
 - **Certainty & uncertainty:** State evidence certainty/limitations. If inference is a project hypothesis (not published), label it as such.
 - **Stale evidence:** Use publication dates and `last-verified` dates to identify potentially stale evidence.
 - **Verification gaps:** If a claim cannot be verified from a reliable source, flag it explicitly rather than fabricating citations.
+- **AI output is not evidence:** AI-generated hypotheses, summaries, or analyses are never evidence by themselves. They require human verification against primary sources. Explicitly distinguish AI hypotheses from verified findings.
 
 ## Research Workflow
+
+### Dual Research Tracks
+- **Discovery:** Investigate mechanisms, identify promising interventions, analyze contradictory results, evaluate hypotheses, and locate evidence gaps.
+- **Translation:** Turn validated findings into accessible explanations, evidence summaries, affordability/accessibility assessments (including India where relevant), and questions patients can discuss with qualified clinicians.
+
+### AI-Assisted Workflow
+1. **Source discovery:** Identify relevant primary sources/registries (PubMed, ClinicalTrials.gov, WHO, ICMR, etc.)
+2. **Evidence extraction:** Extract study details from primary sources
+3. **Study appraisal:** Appraise using `templates/study-appraisal.md`
+4. **Cross-study synthesis:** Synthesize across studies, noting contradictions
+5. **Hypothesis generation:** Generate hypotheses when warranted, but label as AI-generated hypotheses (not findings)
+6. **Contradiction detection:** Actively seek and report contradictory evidence
+7. **Human verification:** Verify material claims against primary sources before treating as factual
+8. **Traceable reporting:** Register sources/claims and document evidence level, certainty, and limitations
+
+### Project Steps
 1. **Register sources** in `research/source-register.csv` (include DOI/registry ID, URL, type, population, status, last-verified).
 2. **Track claims** in `research/claim-ledger.csv` (claim, disease/intervention, evidence level, supporting/conflicting sources, limitations, confidence, last-reviewed).
 3. **Appraise studies** using `templates/study-appraisal.md`.
 4. **Document candidates** using `templates/candidate-intervention.md` with separate sections for preclinical/observational/human evidence.
-5. **Update regularly** per `research/evidence-methodology.md` update policy.
+5. **Apply patient-benefit framework** (evidence strength/reproducibility, meaningful outcomes/durability, safety/harms, population applicability, affordability/availability including India, uncertainty/accessibility/usefulness).
+6. **Update regularly** per `research/evidence-methodology.md` update policy.
 
 ## Git Safety & Source Verification
 - **Scope:** Only files in this repository. Do not modify other repositories/projects.

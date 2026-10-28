@@ -1,27 +1,35 @@
 # PROJECT_PLAN.md — Medicine Research Project Plan
 
 ## Mission
-Build a transparent, traceable, and conservative research knowledge base on diabetes/metabolic disease that distinguishes evidence from hypothesis, reports uncertainties and null results, and never provides clinical advice or cure promises.
+Use AI-assisted scientific research to help people affected by diseases by identifying credible evidence, evaluating potential treatments and disease-modifying interventions, and translating validated findings into safe, accessible, and understandable information.
+
+## Vision
+Produce reliable, useful, traceable research that helps patients and caregivers understand credible options and evidence gaps, equipping them to ask informed questions of qualified clinicians—without providing diagnoses, treatment prescriptions, or cure promises.
 
 ## Objectives
-1. Establish a human evidence baseline for Type 2 diabetes remission with precise definitions and verifiable citations.
-2. Document disease mechanisms (hepatic/pancreatic fat, insulin resistance, beta-cell dysfunction/recovery limits).
-3. Critically evaluate emerging pharmacologic, surgical, and regenerative approaches.
-4. Evaluate natural compounds (starting with Shikuwasa, nobiletin, tangeretin; Indian alternatives: amla, jamun, mosambi, kinnow) with preclinical/human separation.
-5. Maintain reproducible clinical-trial intelligence from registries.
-6. Create a transparent prioritization framework without overstating evidence.
+1. **Evidence baseline:** Establish a human evidence baseline for Type 2 diabetes remission with precise definitions and verifiable citations (preserve and prioritize WP-02).
+2. **Mechanisms:** Document disease mechanisms (hepatic/pancreatic fat, insulin resistance, beta-cell dysfunction/recovery limits).
+3. **Interventions:** Critically evaluate emerging pharmacologic, surgical, and regenerative approaches, distinguishing on-treatment benefits from medication-free remission and durable disease modification.
+4. **Natural compounds:** Evaluate natural compounds (starting with Shikuwasa, nobiletin, tangeretin; Indian alternatives: amla, jamun, mosambi, kinnow) with preclinical/human separation.
+5. **Trials intelligence:** Maintain reproducible clinical-trial intelligence from registries with verification dates.
+6. **Synthesis & prioritization:** Create a transparent prioritization framework without overstating evidence.
+7. **Discovery:** Use AI-assisted methods to investigate mechanisms, identify promising interventions, analyze contradictions, evaluate hypotheses, and locate evidence gaps.
+8. **Translation:** Convert validated findings into accessible explanations, evidence summaries, affordability/accessibility assessments (including India), and questions patients can discuss with qualified clinicians.
+9. **Patient-benefit focus:** Evaluate interventions by evidence strength/reproducibility, meaningful outcomes/durability, safety/harms, population applicability, affordability/availability, uncertainty/accessibility/usefulness.
 
 ## Scope
-- **In scope:** T2D-focused documentation, evidence appraisal, source/claim registries, templates, governance.
-- **Out of scope:** Clinical decision support, treatment recommendations, apps/tools making medical decisions, PHI handling, unapproved external integrations, implementing interventions.
+- **In scope:** T2D-focused documentation (existing scope preserved), AI-assisted discovery and translation, evidence appraisal, source/claim registries, templates, governance, patient-benefit evaluation, affordability/accessibility assessments.
+- **Out of scope:** Diagnosis, treatment prescriptions, clinical decision support, treatment recommendations, apps/tools making medical decisions, PHI handling, unapproved external integrations, implementing interventions. AI output alone is not evidence.
 
 ## Workstreams
-1. **Governance & Infrastructure** — AGENTS, methodology, registries, templates, git hygiene.
-2. **Disease Baselines** — Per-disease biology, remission evidence, gaps.
-3. **Mechanisms** — Fat distribution, beta-cell biology, recovery limits.
-4. **Interventions** — Emerging treatments and natural compounds.
-5. **Trials Intelligence** — Registry tracking, verification.
-6. **Synthesis** — Prioritization, uncertainty mapping.
+1. **Governance & Infrastructure** — AGENTS, methodology, registries, templates, git hygiene, patient-benefit framework.
+2. **Discovery (AI-assisted)** — Mechanisms, promising interventions, contradictions, hypotheses, evidence gaps, source discovery.
+3. **Disease Baselines** — Per-disease biology, remission evidence (WP-02 priority), gaps.
+4. **Mechanisms** — Fat distribution, beta-cell biology, recovery limits.
+5. **Interventions** — Emerging treatments and natural compounds.
+6. **Trials Intelligence** — Registry tracking, verification.
+7. **Synthesis & Prioritization** — Prioritization, uncertainty mapping, patient-benefit evaluation.
+8. **Translation** — Accessible summaries, affordability/accessibility (including India), patient questions for qualified clinicians.
 
 ## Phases and Deliverables
 
@@ -96,15 +104,19 @@ Build a transparent, traceable, and conservative research knowledge base on diab
 |------|--------|------------|
 | Citing secondary summaries as primary evidence | High | Verify against original sources; register in source-register |
 | Conflating remission and cure | High | Enforce definitions in AGENTS/README/disease pages |
-| Overstating preclinical findings | High | Separate evidence by study type; label hypotheses |
+| Overstating preclinical findings | High | Separate evidence by study type; label hypotheses; label AI hypotheses separately |
 | Stale trial statuses | Med-High | Require `last-verified` for registry entries |
 | PHI/credentials leakage | High | `.gitignore` protections; no PHI policy enforced |
 | Fabricating citations | High | Flag unverified claims; do not invent references |
+| Treating AI output as evidence | High | AI output alone never evidence; require human verification against primary sources |
+| Slipping into diagnosis/treatment advice | High | Explicit boundaries in AGENTS/README; no diagnostic/prescribing system; frame as questions for qualified clinicians |
 
 ## Success Metrics
-- All material T2D claims traceable via source/claim registries or flagged unverified.
-- Remission trials (DiRECT/DIADEM-I) documented with verifiable details and limitations.
-- Natural compounds clearly separated by evidence type with no treatment recommendations.
-- Trial intelligence method reproducible with verified statuses.
-- Governance documents consistent across repo.
-- Clean initial commit with only intended files.
+- **Traceability:** All material T2D claims traceable via source/claim registries or flagged unverified. AI hypotheses clearly labeled as such (not findings).
+- **Human evidence baseline:** Remission trials (DiRECT/DIADEM-I) documented with verifiable details and limitations (WP-02 priority maintained).
+- **Evidence separation:** Natural compounds clearly separated by evidence type with no treatment recommendations.
+- **Trials intelligence:** Trial intelligence method reproducible with verified statuses.
+- **Patient benefit:** Validated findings translated into accessible summaries with affordability/accessibility assessments (including India where relevant) and questions for qualified clinicians.
+- **Balanced evaluation:** Interventions evaluated by evidence strength/reproducibility, meaningful outcomes/durability, safety/harms, population applicability, affordability/availability, uncertainty/accessibility/usefulness.
+- **Governance consistency:** Governance documents consistent across repo with clear AI/hypothesis boundaries and no diagnostic/prescribing system.
+- **Clean history:** Only intended files committed with clear messages.
