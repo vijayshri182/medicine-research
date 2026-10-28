@@ -1,0 +1,82 @@
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials/
+auth.json
+token.json
+
+# Patient/medical private data
+*.csv.bak
+patient-data/
+phi/
+pii/
+clinical-notes-private/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# OS
+desktop.ini
+
+# Build artifacts
+*.zip
+*.tar.gz
+*.tgz
+
+# Node (if ever added)
+node_modules/
+
+# Keep research documents - do not ignore
+!README.md
+!AGENTS.md
+!PROJECT_PLAN.md
+!PROGRESS.md
+!CHANGELOG.md
+!research/**
+!templates/**
